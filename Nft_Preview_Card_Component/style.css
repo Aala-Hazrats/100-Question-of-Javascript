@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color:hsl(217, 54%, 11%);
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 470px;
+    background-color:hsl(216, 50%, 16%);
+    border-radius: 10px;
+    padding: 15px;
+    background-size: cover;
+    background-position: center;
+}
+.div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: cyan; */
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: auto;
+}
+.img-top {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-top img {
+    width: 100%;
+    display: block;
+}
+
+.img-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+}
+
+.img-overlay img {
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-top:hover .img-overlay {
+    display: block;
+    cursor: pointer;
+}
+.div2{
+    padding: 10px;
+}
+.div2 .h1{
+    color: white;
+    line-height: 2;
+}
+.div2 .p1{
+    color: hsla(215, 52%, 70%, 0.741);
+    margin: 10px 0px 15px 0px;
+    font-size: 13px;
+}
+.div2 .h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.crypto{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+}
+.aside1{
+    display: flex;
+    gap: 5px;
+}
+.aside1 img,.aside2 img{
+    height: 15px;
+}
+.aside1 h1{
+    color: cyan;
+    font-size: 13px;
+}
+.aside2{
+    display: flex;
+    gap: 5px;
+}
+.aside2 h1{
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+}
+hr{
+   border:  1px solid hsl(215, 32%, 27%);
+}
+footer{
+    display: flex;
+    padding: 14px;
+    gap: 10px;
+}
+footer img{
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+footer p{
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+}
+footer b{
+    color: white;
+}
+footer b:hover{
+    color: cyan;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+   .main{
+    margin: 25px;
+   }
+   .container{
+    padding: 20px;
+    width: 100%;
+    height: 630px;
+   }
+   .div1{
+    width: 100%;
+    height: 350px;
+   }
+   .div2 .h1{
+    font-size: 25px;
+   }
+   .div2 .p1{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 25px;
+   }
+   .aside1 img{
+    height: 20px;
+    width: 10px;
+   }
+   .aside1 h1{
+    font-size: 17px;
+   }
+   .aside2 img{
+    height: 20px;
+    width: 20px;
+   }
+   .aside2 h1{
+    font-size: 17px;
+   }
+   footer{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+   }
+   footer img{
+    height: 40px;
+    width: 40px;
+   }
+   footer p{
+    font-size: 20px;
+   }
+}

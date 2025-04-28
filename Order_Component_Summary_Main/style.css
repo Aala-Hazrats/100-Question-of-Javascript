@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    background-color: hsl(225, 100%, 94%);
+}
+.wrapper img{
+    width: 100%;
+    height: 350px;
+    background-attachment: fixed;
+    position: absolute;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20px 20px 20px 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background-color: white;
+    border-radius: 20px;
+    width: 380px;
+    height: 580px;
+    position: relative;
+}
+
+.div-svg {
+    width: 100%;
+    height: 180px;
+}
+
+.div2 {
+    padding: 30px;
+}
+.div2 .h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+.div2 .h11{
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.498);
+    font-weight: 700;
+}
+
+.plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    width: 100%;
+    height: 70px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.type{
+    display: flex;
+    gap: 15px;
+}
+.type h1{
+    font-weight: 900;
+    font-size: 17px;
+}
+.type p{
+    color: rgba(0, 0, 0, 0.364);
+    font-size: 15px;
+    font-weight: 700;
+}
+.type img{
+    height: 40px;
+    width: 40px;
+    font-weight: 700;
+}
+.change a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+.change a:hover{
+    color: hsl(245, 89%, 69%);
+}
+.proceed{
+    width: 100%;
+    margin: 30px 0px 30px 0px;
+    padding: 13px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 5px 20px 1px hsl(245, 100%, 82%)
+}
+.proceed:hover{
+    cursor: pointer;
+    background-color: hsl(245, 89%, 69%);
+}
+.cancel{
+    width: 100%;
+    background-color: white;
+    border: 0;
+    color: rgba(0, 0, 0, 0.482);
+    font-weight: 700;
+    font-size: 15px;
+}
+.cancel:hover{
+    cursor: pointer;
+    color: black;
+}   
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+        height: 70vh;
+    }
+}
